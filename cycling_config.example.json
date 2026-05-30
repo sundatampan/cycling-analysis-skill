@@ -1,0 +1,15 @@
+{
+  "name": "Your Name",
+  "age": 35,
+  "weight_kg": 70,
+  "height_cm": 170,
+  "gender": "male",
+  "vo2max_cycling": null,
+  "vo2max_running": null,
+  "ftp_watts": null,
+  "hr_max": null,
+  "language": "id",
+  "medical_notes": null,
+  "fit_files_dir": "./examples",
+  "output_pdf": "./output/cycling_report.pdf"
+}

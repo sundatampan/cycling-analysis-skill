@@ -1,0 +1,43 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Output files (don't commit generated reports)
+*.pdf
+!examples/*.pdf
+
+# Personal data
+*.fit
+!examples/*.fit
+
+# Personal config (user should create their own)
+cycling_config.json
+my_config.json
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
