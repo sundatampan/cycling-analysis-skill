@@ -107,6 +107,46 @@ The script handles everything end-to-end: FIT parsing → zone computation → c
 
 ---
 
+## 📥 How to Get Your `.FIT` Files from Garmin
+
+There are three ways to export `.FIT` files from your Garmin device. Pick whichever fits your workflow.
+
+### Option 1 — Garmin Connect Web (easiest, one activity at a time)
+
+1. Open [connect.garmin.com](https://connect.garmin.com) and sign in.
+2. Go to **Activities → All Activities**.
+3. Click the cycling activity you want to export.
+4. Click the **gear icon** (⚙️) in the top-right corner of the activity page.
+5. Select **Export Original** — this downloads the raw `.FIT` file (not `.TCX` or `.GPX`).
+6. Move the downloaded file into your `fit_files_dir` (set in `cycling_config.json`).
+
+> 💡 **Tip:** Use **Export Original** — `.TCX` and `.GPX` exports drop power, cadence, and other sensor data this skill needs.
+
+### Option 2 — Bulk Export via Garmin Account (all activities at once)
+
+If you want every ride you've ever recorded:
+
+1. Go to [garmin.com/account](https://www.garmin.com/account) → **Manage Your Data** → **Export Your Data**.
+2. Request a full data export. Garmin emails you a download link within a few hours to a few days.
+3. Unzip the archive — `.FIT` files live under `DI_CONNECT/DI-Connect-Fitness-Uploaded-Files/`.
+4. Copy the cycling activities into your `fit_files_dir`.
+
+### Option 3 — Directly from the Device (no internet needed)
+
+1. Connect your Garmin to your computer via USB cable. It mounts as a drive (e.g. `GARMIN`).
+2. Open the drive and navigate to `Garmin/Activities/`.
+3. Each ride is saved as a `.FIT` file named with its timestamp (e.g. `2025-05-12-07-14-22.fit`).
+4. Copy the files you need into your `fit_files_dir`.
+
+> ⚠️ Don't delete files from the device folder unless you're sure they've already synced to Garmin Connect.
+
+### From Wahoo, Strava, or Other Platforms
+
+- **Wahoo ELEMNT** — connect via USB, files are under `/Wahoo Fitness/Activities/`.
+- **Strava** — open an activity → ••• menu → **Export Original**. (Only works if the activity was uploaded as a `.FIT` originally.)
+
+---
+
 ## 📁 File Structure
 
 ```
